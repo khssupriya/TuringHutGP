@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="vieport" content="width=device-width, inital-scale=1">
+	<title>Turing Hut</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body id="home">
+
+    <!------------------------------------------NAV BAR ------------------------------------------------->
+
+	<nav class="navbar navbar-expand-lg navbar-expand-md navbar-light sticky-top js-scroll-nav" id="navid">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#home">Turing Hut</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon" onclick="change_nav_icon()" id="nav-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" id="homebtn" href="#home">Home <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" id="aboutbtn" href="#about">About Us</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" id="teambtn" href="#team">Team</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" id="contactbtn" href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!---------------------------------------------CAPTION & LOGO----------------------------------------------->
+
+	<div style="background-color: #04c0c9;">
+		<div class="container">
+
+			<div class="row" style="height: 100vh">
+				<div class="col-sm-12 col-xs-12 col-lg-8 col-md-8 my-auto">
+					<p style="font-size: 30px;" class="text-center">We are a group of people working together for the improvement of programming culture in VNRVJIET.</p>	
+				</div>	
+				<div class="col-sm-12 col-xs-12 col-lg-4 col-md-4 my-auto ">
+					<img src="https://turinghut.org/images/th_logo.png" class="img-responsive text-center">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!------------------------------------------------------ABOUT US------------------------------------------------------------>
+
+	<section id="about" class="btmmargin pt-5">
+
+	<div class="col-12 jumbotron text-center" style="background-color: white;"><h1>About Us</h1></div>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-sm-12 col-xs-12 col-lg-4 col-md-4 my-auto">
+				<img src="https://turinghut.org/images/vision.png" class="img-responsive text-center">	
+			</div>	
+			<div class="col-sm-12 col-xs-12 col-lg-8 col-md-8 my-auto" >
+				<p class="text-center hugepara"><i class="fa fa-quote-left"></i>Act as platform of “unity” to promote the `cause` of Computer Science. Develop a sense of belongingness amongst the pupils in the `impact` being created by Computer Science and it’s applied concepts while appreciating its inter-disciplinary nature and recognizing the unique art of developing solutions through mathematical models evolving in scale to the emerging problems of the world today. And help explore knowledge, simulate study and research of and seek opportunities in Computer Science, with special regard given to Programming, as its members pave way for their career into the future.<i class="fa fa-quote-right"></i></p>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-sm-12 col-xs-12 my-auto d-md-none d-sm-block">
+				<img src="https://turinghut.org/images/mission.png" class="img-responsive text-center">
+			</div>
+			<div class="col-sm-12 col-xs-12 col-lg-8 col-md-8 my-auto">			
+				<p class="text-center hugepara"><i class="fa fa-quote-left"></i>The club shall work towards promoting the greater cause of Computer Science in the community by Orienting freshmen to the nature of Computer Science, organizing events, Creating awareness about the opportunities to expand their knowledge and showcase their skills. Uniting people with motivated interest to foster a culture of learning in the community with regards to Computer Science. Organizing Programming events at various tiers as deemed necessary on a continuous basis for all its members while training them in the underlying concepts, best coding practices and ethics; with an ultimate goal of promoting Competitive Programming under the motto `Programming as a Sport` and `The Art of Programming`.<i class="fa fa-quote-right"></i></p>
+			</div>	
+			<div class="col-lg-4 col-md-4 my-auto d-none d-md-block">
+				<img src="https://turinghut.org/images/mission.png" class="img-responsive text-center">
+			</div>
+		</div>
+
+	
+		<div class="row">
+			<div class="col-sm-12 col-xs-12 col-lg-3 col-md-6 text-center hugenums"><p class="numbers"><strong id="changingNums1">0</strong></p><p class="caption">Club Members</p></div>
+			<div class="col-sm-12 col-xs-12 col-lg-3 col-md-6 text-center hugenumsmid hugenums"><p class="numbers"><strong id="changingNums2">0</strong></p><p class="caption">Participations</p></div>
+			<div class="col-sm-12 col-xs-12 col-lg-3 col-md-6 text-center hugenums hugenumslast"><p class="numbers"><strong id="changingNums3">0</strong></p><p class="caption">Hosted Contests</p></div>
+			<div class="col-sm-12 col-xs-12 col-lg-3 col-md-6 text-center"><p class="numbers"><strong id="changingNums4">0</strong></p><p class="caption">Sessions Taken</p></div>
+		</div>		
+	</div>
+
+</section>
+
+
+	<!-------------------------------------------------------THE TEAM-------------------------------------------------------->
+
+<section id="team" class="py-5">
+
+<div class="team-area sp" style="background-color: #f5ffff;">
+
+	<div class="col-12 jumbotron text-center" style="background-color: #f5ffff;"><h1>Meet The Team</h1></div>
+
+    <div class="container">
+
+    <div class="row padding mt-4 mb-5">
+
+
+<div class="col-lg-3 col-md-6 mb-lg-0 mb-5 each-team">
+    <div class="card">
+        <div class="team-img"><img class="card-img-top grow" src="https://turinghut.org/images/prateek.jpeg" alt="Card image cap"></div>
+        <div class="card-body">
+            <h5 class="card-title text-center">Prateek Varma</h5>
+            <p class="card-text text-center">Founder</p>
+        </div>
+        <div class="info-layer">
+            <div class="info">
+                <div class="text-center" style="font-size: 20px;">
+                    <i class="fa fa-envelope text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_email('prateek2k@gmail.com')"></i>
+                    <i class="fa fa-phone text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_phone('1234567809')"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-lg-0 mb-5 each-team">
+    <div class="card">
+        <div class="team-img"><img class="card-img-top grow" src="https://turinghut.org/images/bvkmaam.jpeg" alt="Card image cap"></div>
+        <div class="card-body">
+            <h5 class="card-title text-center">Mrs.B.V.Kiranmaye</h5>
+            <p class="card-text text-center">Founder</p>
+        </div>
+        <div class="info-layer">
+            <div class="info">
+                <div class="text-center" style="font-size: 20px;">
+                    <i class="fa fa-envelope text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_email('kiranmayee_bv@vnrvjiet.in')"></i>
+                    <i class="fa fa-phone text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_phone('1234567809')"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-lg-0 mb-5 each-team">
+    <div class="card">
+        <div class="team-img"><img class="card-img-top grow" src="https://turinghut.org/images/babymaam.jpeg" alt="Card image cap"></div>
+        <div class="card-body">
+            <h5 class="card-title text-center">Mrs.V.Baby</h5>
+            <p class="card-text text-center">Founder</p>
+        </div>
+        <div class="info-layer">
+            <div class="info">
+                <div class="text-center" style="font-size: 20px;">
+                    <i class="fa fa-envelope text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_email('baby_v@vnrvjiet.in')"></i>
+                    <i class="fa fa-phone text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_phone('1234567809')"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-lg-0 mb-5 each-team">
+    <div class="card">
+        <div class="team-img"><img class="card-img-top grow" src="https://turinghut.org/images/naginimaam.jpeg" alt="Card image cap"></div>
+        <div class="card-body">
+            <h5 class="card-title text-center">Dr.S.Nagini</h5>
+            <p class="card-text text-center">Founder</p>
+        </div>
+        <div class="info-layer">
+            <div class="info">
+                <div class="text-center" style="font-size: 20px;">
+                    <i class="fa fa-envelope text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_email('nagini_s@vnrvjiet.in')"></i>
+                    <i class="fa fa-phone text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_phone('1234567809')"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+<div class="row padding my-5">
+
+
+<div class="col-lg-3 col-md-6 mb-lg-0 mb-5 each-team">
+    <div class="card">
+        <div class="team-img"><img class="card-img-top grow" src="https://turinghut.org/images/priya_bhandari.jpeg" alt="Card image cap"></div>
+        <div class="card-body">
+            <h5 class="card-title text-center">Priya Bhandari</h5>
+            <p class="card-text text-center">Co-Founder</p>
+        </div>
+        <div class="info-layer">
+            <div class="info">
+                <div class="text-center" style="font-size: 20px;">
+                    <i class="fa fa-envelope text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_email('priyab724@gmail.com')"></i>
+                    <i class="fa fa-phone text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_phone('1234567809')"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-lg-0 mb-5 each-team">
+    <div class="card">
+        <div class="team-img"><img class="card-img-top grow" src="https://turinghut.org/images/venkat.jpg" alt="Card image cap"></div>
+        <div class="card-body">
+            <h5 class="card-title text-center">Pinnamani Venkat</h5>
+            <p class="card-text text-center">Co-Founder</p>
+        </div>
+        <div class="info-layer">
+            <div class="info">
+                <div class="text-center" style="font-size: 20px;">
+                    <i class="fa fa-envelope text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_email('priyab724@gmail.com')"></i>
+                    <i class="fa fa-phone text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_phone('1234567809')"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-lg-0 mb-5 each-team">
+    <div class="card">
+        <div class="team-img"><img class="card-img-top grow" src="https://turinghut.org/images/tarun1.jpg" alt="Card image cap"></div>
+        <div class="card-body">
+            <h5 class="card-title text-center">Tarun Kumar</h5>
+            <p class="card-text text-center">Co-Founder</p>
+        </div>
+        <div class="info-layer">
+            <div class="info">
+                <div class="text-center" style="font-size: 20px;">
+                    <i class="fa fa-envelope text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_email('priyab724@gmail.com')"></i>
+                    <i class="fa fa-phone text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_phone('1234567809')"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-lg-0 mb-5 each-team">
+    <div class="card">
+        <div class="team-img"><img class="card-img-top grow" src="https://turinghut.org/images/siddarth.jpeg" alt="Card image cap"></div>
+        <div class="card-body">
+            <h5 class="card-title text-center">Siddarth Jaykumar</h5>
+            <p class="card-text text-center">Co-Founder</p>
+        </div>
+        <div class="info-layer">
+            <div class="info">
+                <div class="text-center" style="font-size: 20px;">
+                    <i class="fa fa-envelope text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_email('priyab724@gmail.com')"></i>
+                    <i class="fa fa-phone text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_phone('1234567809')"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+<div class="row padding my-5">
+
+
+<div class="col-lg-3 col-md-6 mb-lg-0 mb-5 each-team">
+    <div class="card">
+        <div class="team-img"><img class="card-img-top grow" src="https://turinghut.org/images/shoeb.jpeg" alt="Card image cap"></div>
+        <div class="card-body">
+            <h5 class="card-title text-center">Soheb Moin</h5>
+            <p class="card-text text-center">President</p>
+        </div>
+        <div class="info-layer">
+            <div class="info">
+                <div class="text-center" style="font-size: 20px;">
+                    <i class="fa fa-envelope text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_email('priyab724@gmail.com')"></i>
+                    <i class="fa fa-phone text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_phone('1234567809')"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-3 col-md-6 mb-lg-0 mb-5 each-team">
+    <div class="card">
+        <div class="team-img"><img class="card-img-top grow" src="https://turinghut.org/images/kov.jpeg" alt="Card image cap"></div>
+        <div class="card-body">
+            <h5 class="card-title text-center">Covid Gajevally</h5>
+            <p class="card-text text-center">General Secretary</p>
+        </div>
+        <div class="info-layer">
+            <div class="info">
+                <div class="text-center" style="font-size: 20px;">
+                    <i class="fa fa-envelope text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_email('priyab724@gmail.com')"></i>
+                    <i class="fa fa-phone text-center team-icon" data-toggle="modal" data-target="#exampleModalCenter" onclick="set_phone('1234567809')"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+    
+</div>
+
+     </div>
+ </div>
+</section>
+
+
+
+
+<!----------------------------------------------------CONTACT US---------------------------------------------------------------->
+
+<section id="contact" class="py-5" style="background-color: #04c0c9;">
+
+<div class="col-12 jumbotron text-center" style="background-color: #04c0c9;"><h1>Contact Us</h1></div>
+<div class="container">
+	<div class="row my-5 text-center " style="border-bottom: 1px solid black">
+		<div class="col-lg-4 col-md-4 col-sm-6"><h3><strong>Want to meet us <br> In-person?</strong></h3></div>
+		<div class="col-lg-2 col-md-2 col-sm-6"><i class="fa fa-university contact-icons"></i></div>
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			<h4><strong>Address</strong></h4>
+			<p>CSE Department,Vignana Jyothi Nagar,Pragathi Nagar,Nizampet(S.O),Hyderabad 500 090, TS,India.</p>
+		</div>
+	</div>
+	<div class="row my-5 text-center pb-4" style="border-bottom: 1px solid black">
+		<div class="col-lg-4 col-md-4 col-sm-6"><h3><strong>We would be glad to listen from you!</strong></h3></div>
+		<div class="col-lg-2 col-md-2 col-sm-6" ><i class="fa fa-phone contact-icons"></i></i></div>
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			<h4><strong>Phone Number</strong></h4>
+			<p>91-040-23042758/59/60</p>
+		</div>
+	</div>
+	<div class="row my-5 text-center">
+		<div class="col-lg-4 col-md-4 col-sm-6"><h3><strong>You can E-Mail us <br>too :)</strong></h3></div>
+		<div class="col-lg-2 col-md-2 col-sm-6"><i class="fa fa-envelope contact-icons"></i></div>
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			<h4><strong>E-Mail</strong></h4>
+			<p>turinghut@vnrvjiet.in</p>
+		</div>
+	</div>
+</div>
+
+</section>
+
+<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.280899151561!2d78.38460531470552!3d17.541807987986324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8e0ab28e0975%3A0x7b048b2858fdee94!2sVallurupalli%20Nageswara%20Rao%20Vignana%20Jyothi%20Institute%20of%20Engineering%20%26Technology!5e0!3m2!1sen!2sin!4v1591108891814!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<div class="text-center" style="background-color:#04c0c9;"><h3>Plagiarised By a Noob</h3></div>
+
+<!------------------------------------------NOT ALWAYS VISIBLE STUFF------------------------------------------------->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-heading">Email</h5>
+      </div>
+      <div class="modal-body">
+        <div><span id="divClipboard" style="font-size: 20px" class="ml-5 mt-5">12345678</span><span onclick="copyClipboard()" style="float: right;" class="copy-icon"><p style="font-size: 40px;"><i class="fa fa-clone"></i></p></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Snack Bar -->
+<div id="snackbar">Copied to Clipboard :)</div>
+
+
+
+<!--Blindly imported part-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="JS/custom.js"></script>
+
+</body>
+</html>
+
+<!--                 MOST IMPORTANT
+
+
+
+ 768          992                1200
+'     '     '     '     '     '     '     '     '
+---------^------------^------------------^---------
+     xs         sm              md             lg
+   (phone)   (tablet)        (laptop)       (desktop)
+
+-->

@@ -1,0 +1,254 @@
+html {
+	scroll-behavior: smooth;
+}
+
+img{
+	height: 100%;
+	width: 100%;
+}
+
+/*---------UNDERLINE AFTER EVRY SECTION------*/
+
+#about h1,#team h1,#contact h1{
+	display: inline-block;
+	position: relative;
+}
+
+#about h1:after, #team h1:after, #contact h1:after{
+	content: "";
+	height: 2.5px;
+	width: 50%;
+	background-color: black;
+	position: absolute;
+	bottom: -.5em;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+
+/*-------------------NAV BAR---------------*/
+.nav-link{
+	font-size: 20px;
+	color: black;
+}
+.nav-item{
+	padding: 10px;
+}
+.navbar-brand{
+	font-size: 35px;
+}
+.nav-link::hover{
+	text-decoration: underline;
+}
+.navbar{
+	background-color: #04c0c9;
+}
+
+/*----------------CAPTION & LOGO----*/
+.caption{
+	font-size: 25px;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+
+/*-----ABOUT US-------*/
+
+.hugepara{
+	font-size: 20px;
+}
+.btmmargin{
+	margin-bottom: 10%;
+}
+
+.numbers{
+	font-size: 100px;
+}
+
+/*----------HUGE NUMS------*/
+
+.hugenums{
+	border-right: 1px solid black;
+}
+.hugenumsmid{
+	border-right: 1px solid black;
+}
+.hugenums:after, .hugenumsmid:after{
+	content: "";
+	height: 1px;
+	width: 50%;
+	background-color: black;
+	position: absolute;
+	bottom: -.5em;
+	left: 50%;
+	transform: translate(-50%);
+}
+/*----extra small ---*/
+@media (max-width: 576px) {  
+	.hugenums{
+		border-right: hidden;
+	}
+}
+/*------small----*/
+@media (min-width: 576px) {
+	.hugenums{
+		border-right: hidden;
+	}
+}
+/*-----medium-----*/
+@media (min-width: 768px) { 
+	.hugenums{
+		border-right: 1px solid black;
+	}
+	.hugenumsmid{
+		border-right:hidden;
+	}
+	.hugenums:after{
+		background-color: black;
+	}
+	.hugenumslast:after{
+		background-color: white;
+	}
+
+ }
+/*--------large-----*/
+@media (min-width: 1200px) { 
+	.hugenums{
+		border-right: 1px solid black;
+	}
+	.hugenums:after{
+		background-color: white;
+	}
+}
+/*------extra large-------*/
+@media (min-width: 992px) { 
+	.hugenums{
+		border-right: 1px solid black;
+	}
+	.hugenums:after{
+		background-color: white;
+	}
+ }
+
+/*------------TEAM-------*/
+
+.card-img-top {
+		width: 100%;
+		height: 25vw;
+		object-fit: cover;
+}
+.card-title{
+	font-size: 20px;
+}
+
+.team-img{overflow: hidden;}
+.card-img-top{min-height: 400px;}
+.card-body{min-height: 100px;}
+.grow { transition: all .2s ease-in-out;}
+.card:hover .grow{ transform: scale(1.1); }
+.card {
+		height: 450px;
+		/*border-radius: 8px;*/
+		margin: auto;
+		box-shadow: 0 0 20px -5px black;
+		overflow: hidden;
+}
+
+.info-layer {
+		z-index: 1;
+		position: absolute;
+		height: 80px;
+		width: 100%;
+		bottom: 0;
+}
+
+.card:hover .card-body{
+		visibility: hidden;
+}
+
+.info {
+		font-family: Inconsolata;
+		padding-left: 20px;
+		transform: translateY(250px);
+		transition: transform 0.5s cubic-bezier(.31,1.21,.64,1.02);
+}
+
+.card:hover .info {
+		transform: translateY(0px);
+}
+
+
+.team-icon:hover {
+		cursor: pointer;
+		background-color: #04c0c9;;
+		color: white;
+		border-radius: 100%;
+}
+.team-icon{padding: 5%;}
+
+#snackbar {
+	visibility: hidden;
+	min-width: 250px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	padding: 16px;
+	position: fixed;
+	z-index: 1;
+	bottom: 30px;
+	font-size: 17px;
+}
+
+#snackbar.show {
+	visibility: visible;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+@-webkit-keyframes fadein {
+	from {bottom: 0; opacity: 0;} 
+	to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+	from {bottom: 30px; opacity: 1;} 
+	to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+}
+.copy-icon:hover{
+		cursor: pointer;
+}
+
+/*----------------CONTACT--------------*/
+
+.contact-icons{
+	font-size: 50px;
+	color: #04c0c9 ;
+	background-color: white;
+	border-radius: 100%;
+	padding: 10%;
+}
+
+
+
+
+
+/*-------MAP & PARALLAX----*/
+
+#map {
+	width: 100%;
+	height: 400px;
+	background-color: grey;
+}
